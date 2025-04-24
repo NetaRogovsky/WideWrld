@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Neta Rogovsky, IS117-002, Spring 2025 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - WideWrld</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary">Wide</span><span class="text-accent">Wrld</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a class="dropdown-item" href="explore.html">New Art</a></li>
+                            <li><a class="dropdown-item" href="explore.html#trends">Trending</a></li>
+                            <li><a class="dropdown-item" href="explore.html#artists">Artists</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Explore Header -->
+<section class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h1>Explore Page</h1>
+            <p class="lead">Art • Tailored to your taste</p>
+            <p>Discover new art and artists based on your previous interactions. Find inspiration for your next creative project.</p>
+            <a href="#" class="btn btn-primary">Start Exploring</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/artist-in-studio.png" class="img-fluid rounded" alt="Artist in studio">    </div>
+</section>
+
+   <!-- Suggestions Section -->
+<section class="container py-5">
+    <h2 class="mb-4">Suggestions - based on what you like</h2>
+    <div class="row">
+        <!-- Row 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/abstract-expressions.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Abstract Expressions">
+                <div class="card-body">
+                    <h5 class="card-title">Abstract Expressions</h5>
+                    <p class="card-text">By Maria Torres</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/ceramic-sculptures.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Ceramic Sculptures">
+                <div class="card-body">
+                    <h5 class="card-title">Ceramic Sculptures</h5>
+                    <p class="card-text">By David Chen</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/urban-photography.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Urban Photography">
+                <div class="card-body">
+                    <h5 class="card-title">Urban Photography</h5>
+                    <p class="card-text">By Sarah Johnson</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/glass-art.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Glass Art">
+                <div class="card-body">
+                    <h5 class="card-title">Glass Art</h5>
+                    <p class="card-text">By James Miller</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/digital-illustrations.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Digital Illustrations">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Illustrations</h5>
+                    <p class="card-text">By Aiko Tanaka</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="images/suggestions/mixed-media.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Mixed Media">
+                <div class="card-body">
+                    <h5 class="card-title">Mixed Media</h5>
+                    <p class="card-text">By Robert Lewis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Trending Section -->
+<section id="trends" class="container py-5">
+    <h2 class="mb-4">Trending This Week</h2>
+    <div class="row">
+        <div class="col-lg-5 mb-4">
+            <img src="images/trending/eco-art.png" class="img-fluid rounded" style="width: 100%; height: auto; max-height: 400px; object-fit: cover;" alt="Eco-conscious art featuring person in nature">
+        </div>
+        <div class="col-lg-7">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Eco-conscious Art</h3>
+                    <p class="card-text">Artists are increasingly using sustainable materials and addressing environmental themes in their work.</p>
+                    <p class="card-text"><small class="text-muted">Trending since: Last month</small></p>
+                    <a href="#" class="btn btn-primary">Explore Trend</a>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Digital NFT Collections</h5>
+                    <p class="card-text">A resurgence of digital art being collected as NFTs with new platforms focusing on sustainability.</p>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Textile Art Revival</h5>
+                    <p class="card-text">Traditional techniques getting modern interpretations from a new generation of artists.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Interactive Installations</h5>
+                    <p class="card-text">Art that invites viewer participation is gaining popularity in galleries worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Featured Artists Section -->
+<section class="container py-5">
+    <h2 class="mb-4">Featured Artists</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="images/featured-artists/elena-mori.png" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Elena Mori's metal sculpture work">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h4 class="card-title">Elena Mori</h4>
+                            <p class="text-muted">Digital Artist • Tokyo, Japan</p>
+                            <p class="card-text">Elena blends traditional Japanese art influences with digital techniques to create stunning landscape pieces.</p>
+                            <a href="#" class="btn btn-outline-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="images/featured-artists/carlos-mendez (1).png" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="Carlos Mendez's digital landscape art">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h4 class="card-title">Carlos Mendez</h4>
+                            <p class="text-muted">Sculptor • Barcelona, Spain</p>
+                            <p class="card-text">Carlos creates large-scale sculptures from reclaimed metals that explore themes of industrialization and nature.</p>
+                            <a href="#" class="btn btn-outline-primary">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- New Mediums Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Explore New Mediums</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/new-mediums/augmented-reality.png" class="card-img-top" alt="Augmented Reality Art">
+            <div class="card-body">
+              <h5 class="card-title">Augmented Reality</h5>
+              <p class="card-text">Digital art that overlays the physical world through AR technology.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/new-mediums/sound-art.png" class="card-img-top" alt="Sound Art">
+            <div class="card-body">
+              <h5 class="card-title">Sound Art</h5>
+              <p class="card-text">Installations and experiences focusing on auditory elements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/new-mediums/bio-art.png" class="card-img-top" alt="Bio Art">
+            <div class="card-body">
+              <h5 class="card-title">Bio Art</h5>
+              <p class="card-text">Art created with living organisms and biological materials.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/new-mediums/ai-generated.png" class="card-img-top" alt="AI Generated Art">
+            <div class="card-body">
+              <h5 class="card-title">AI Generated</h5>
+              <p class="card-text">Artwork created through collaboration with artificial intelligence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>WideWrld</h5>
+                    <p>A safe space for all artists and creators to connect, share, and grow together.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4 mb-md-0">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4 mb-md-0">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Stay updated with the latest art trends and community events.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025. Neta Rogovsky. WideWrld. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> for artists everywhere</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

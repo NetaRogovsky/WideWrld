@@ -1,0 +1,104 @@
+/* DEVELOPER: your name here, IS117-xxx, Spring 2025 */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Typography adjustments */
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    /* Cards */
+    .card-img-top {
+        height: 180px;
+    }
+    
+    /* Artist spotlight */
+    .artist-spotlight {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    /* Section spacing */
+    .section {
+        padding: 2rem 0;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Gallery items */
+    .gallery-item img {
+        height: 150px;
+    }
+    
+    /* About page */
+    .about-image {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Float adjustments for mobile */
+    .float-left, .float-right {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    /* Gallery items */
+    .gallery-item {
+        margin-bottom: 1rem;
+    }
+    
+    /* Sections padding */
+    .section {
+        padding: 2.5rem 0;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* Card adjustments */
+    .card-title {
+        font-size: 1.1rem;
+    }
+}

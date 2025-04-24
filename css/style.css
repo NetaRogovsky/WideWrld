@@ -1,0 +1,447 @@
+/* DEVELOPER: your name here, IS117-xxx, Spring 2025 */
+
+/* Global Styles */
+:root {
+    --primary-color: #4b6f8a;
+    --secondary-color: #e9e6de;
+    --accent-color: #f1ae33;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+}
+
+@font-face {
+    font-family: 'jsMath-cmbx10';
+    src: url('fonts/jsMath-cmbx10.woff2') format('woff2'),
+         url('fonts/jsMath-cmbx10.woff') format('woff'),
+         url('fonts/jsMath-cmbx10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Change all blue buttons to dusty rose (DA7575) */
+.btn-primary,
+.btn-outline-primary:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #DA7575 !important;
+  border-color: #DA7575 !important;
+  color: white !important;
+}
+
+/* Make text in pink buttons white */
+.btn-primary {
+    color: white !important;
+  }
+
+  /* Force text in pink buttons to be white */
+.btn-primary {
+    color: white !important; 
+  }
+  
+  /* Specifically target the buttons in the cards */
+  .card .btn-primary {
+    color: white !important;
+    font-weight: bold !important;
+  }
+  
+  /* Even more specific targeting for those exact buttons */
+  a[href="#"].btn-primary {
+    color: white !important;
+  }
+
+/* Change outline buttons */
+.btn-outline-primary {
+  color: #DA7575 !important;
+  border-color: #DA7575 !important;
+}
+
+/* Make button text visible (white) */
+.btn-primary {
+    color: white !important;
+  }
+  
+  /* Target specific buttons in cards */
+  .card .btn-primary {
+    color: white !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Target buttons by their href attribute */
+  a[href="#"].btn-primary {
+    color: white !important;
+  }
+  
+  /* Make button text visible (white) */
+.btn-primary {
+    color: white !important;
+  }
+  
+  /* Target specific buttons in cards */
+  .card .btn-primary {
+    color: white !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Target buttons by their href attribute */
+  a[href="#"].btn-primary {
+    color: white !important;
+  }
+  
+  /* Target only the navigation part of the footer */
+  .navigation,
+  div:has(h2:contains("Navigation")),
+  .col-md-4:has(h2:contains("Navigation")) {
+    background-color: #818CB5 !important;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+/* Make button text visible (white) */
+.btn-primary {
+    color: white !important;
+  }
+  
+  /* Target specific buttons in cards */
+  .card .btn-primary {
+    color: white !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Target buttons by their href attribute */
+  a[href="#"].btn-primary {
+    color: white !important;
+  }
+  
+  /* Add navigation section background color */
+  .navigation-section h2,
+  h2:contains("Navigation"),
+  div:has(> h2:contains("Navigation")),
+  .footer-column:nth-child(2),
+  .col-md-3:has(a[href="explore.html"]),
+  .col-md-3:has(a[href="community.html"]) {
+    background-color: #818CB5 !important;
+    padding: 15px !important;
+    border-radius: 5px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .navigation-links a,
+  .navigation-section a {
+    color: white !important;
+  }
+
+  #footer-navigation {
+    background-color: #818CB5 !important;
+  }
+
+/* Specific targeting for the Discover button */
+.discover-btn,
+a.discover-btn,
+button.discover-btn,
+.hero-section .btn,
+.btn-discover {
+  background-color: #DA7575 !important;
+  border-color: #DA7575 !important;
+  color: white !important;
+}
+
+/* Add "Learn More" text to specific empty buttons */
+.card .btn:empty,
+.container .btn-primary:empty,
+button.btn:empty {
+  position: relative;
+}
+
+/* Target the specific buttons in the Get Connected section */
+.card-title:contains("Share your own art!") + .card-text + .btn:empty::before,
+.card-title:contains("Connect with artists!") + .card-text + .btn:empty::before {
+  content: "Learn More";
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card .btn:empty::after,
+.container .btn-primary:empty::after,
+button.btn:empty::after {
+  content: "Learn More";
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* For View More buttons */
+.btn-more,
+.view-more-btn,
+a.view-more,
+.card .btn,
+.btn-outline-primary {
+  color: #DA7575 !important;
+  border-color: #DA7575 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #DA7575 !important;
+  color: white !important;
+}
+
+/* For Subscribe button */
+.input-group .btn,
+.newsletter .btn,
+button[type="submit"] {
+  background-color: #DA7575 !important;
+  border-color: #DA7575 !important;
+  color: white !important;
+}
+
+.navbar-brand span,
+.navbar-brand a,
+.navbar-brand h1,
+.text-primary,
+.navbar-brand * {
+  font-family: "jsMath-cmbx10", sans-serif !important;
+  color: #C6F3C4 !important;
+}
+  }
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    .navbar-brand .text-primary,
+..navbar-brand h1,
+span.text-primary,
+.text-primary.fw-bold,
+[class*="text-primary"] {
+  font-family: "jsMath-cmbx10", sans-serif !important;
+  color: #C6F3C4 !important;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--accent-color);
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+/* Artist Spotlight */
+.artist-spotlight {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.artist-spotlight img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 3rem 0;
+}
+
+.gallery-item {
+    margin-bottom: 1.5rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery-item img:hover {
+    opacity: 0.9;
+}
+
+/* Explore Section */
+.explore-section {
+    background-color: var(--light-bg);
+    padding: 3rem 0;
+}
+
+/* Community Section */
+.community-section {
+    padding: 3rem 0;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer a:hover {
+    color: white;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    margin-right: 0.5rem;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+}
+
+/* About Page */
+.about-section {
+    padding: 3rem 0;
+}
+
+.about-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Float for wrapping content around images */
+.float-left {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
