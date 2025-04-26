@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Neta Rogovsky, IS117-002, Spring 2025 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WideWrld</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary">Wide</span><span class="text-accent">Wrld</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a class="dropdown-item" href="explore.html#new-art">New Art</a></li>
+                            <li><a class="dropdown-item" href="explore.html#trends">Trending</a></li>
+                            <li><a class="dropdown-item" href="explore.html#artists">Artists</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section class="about py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="mb-4">About</h1>
+                    <h2 class="h3 mb-4">Neta Rogovsky - Art Curator</h2>
+                    
+                    <p>I'm Neta Rogovsky, an art curator and lifelong lover of all things creative. Whether I'm curating an exhibition or getting my hands messy with paint, watercolor, or digital design, I love exploring creative mediums. I created this platform called WideWrld as a demo to showcase an idea I had to create a space for artists. From photography to typography, WideWrld is a space where all creators are welcome to express themselves.</p>
+                    
+                    <p>This platform allows creators to share their work, find inspiration, and connect with a supportive community. It highlights smaller creators, giving everyone an equal chance at sharing their art –their voice– with the world.</p>
+                    
+                    <p>WideWrld is the culmination of my belief that art should be accessible, collaborative, and community-driven. Through this platform, I hope to break down barriers in the art world and create a space where creativity can flourish without limitations.</p>
+                    
+                    <div class="mt-4 p-3 bg-light rounded">
+                        <h3 class="h5 mb-3">Disclaimer:</h3>
+                        <p>This website you are currently on was created as a prototype of the potential for this platform. As you can see, in all pages but specifically the gallery section, you are viewing an example of what a user's experience would look like. I put my personal art as an example of a published work, and as drafts to demonstrate what it would look like for every artist if this platform was up and running. This is only a demo, and therefore it would look different based on the user's interactions with the platform. This applies to every page of this platform, which would be created based on the user's activity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/portrait.png" alt="Neta Rogovsky, Art Curator" class="img-fluid rounded shadow mb-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-center mb-4">Contact me</h2>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="yourMessage" class="form-label">Your message</label>
+                                <textarea class="form-control" id="yourMessage" rows="5" placeholder="Enter your message or inquiry" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Additional Contact Information -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+                        <h4>Visit Us</h4>
+                        <p>123 Art Avenue<br>Creative District<br>New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-phone fa-3x mb-3 text-primary"></i>
+                        <h4>Call Us</h4>
+                        <p>+1 (555) 123-4567<br>Monday-Friday: 9am-5pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+                        <h4>Email Us</h4>
+                        <p>info@widewrld.com<br>support@widewrld.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>WideWrld</h5>
+                    <p>A safe space for all artists and creators to connect, share, and grow together.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-4 mb-md-0">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4 mb-md-0">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Stay updated with the latest art trends and community events.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025. Neta Rogovsky. WideWrld. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> for artists everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
